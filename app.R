@@ -114,7 +114,13 @@ ui <- fluidPage(
                "),
           class = "static-text"
         )
-      )
+      ),
+      
+      div(
+        HTML('<p style="text-align: center; font-size: 14px; margin-top: 20px;">
+              <a href="https://github.com/sunray1/NEONResearchQGenerator" target="_blank">View this project on GitHub</a>
+              </p>')
+      )      
     )
   )
 )

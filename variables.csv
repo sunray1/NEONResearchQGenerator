@@ -1,7 +1,7 @@
 Type,Variable,Comment
 X,space,Spatial distribution of sites
 X,time,Could look across time at one site or across multiple sites
-X,land cover type,"< href =""https://www.neonscience.org/field-sites/exports/NEON_Field_Site_Metadata_20241107"" target=""_blank"">Field Site Metadata</a>"
+X,land cover type,"<a href =""https://www.neonscience.org/field-sites/exports/NEON_Field_Site_Metadata_20241107"" target=""_blank"">Field Site Metadata</a>"
 X,air temperature,"<a href=""https://data.neonscience.org/data-products/DP1.20046.001"" target=""_blank"">DP1.20046.001</a> (above water surface); <a href=""https://data.neonscience.org/data-products/DP1.00002.001"" target=""_blank"">DP1.00002.001</a> (terrestrial); <a href=""https://data.neonscience.org/data-products/DP1.00003.001"" target=""_blank"">DP1.00003.001</a> (terrestrial); <a href=""https://www.neonscience.org/data-collection/meteorology"" target=""_blank"">Read More: Meteorology</a>"
 X,[A] populations,
 X,precipitation,"<a href=""https://data.neonscience.org/data-products/DP1.00006.001"" target=""_blank"">DP1.00006.001</a> (terrestrial); <a href=""https://www.neonscience.org/data-collection/meteorology"" target=""_blank"">Read More: Meteorology</a>"
