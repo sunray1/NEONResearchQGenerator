@@ -15,6 +15,8 @@ X,fires,
 X,floods,
 X,hurricanes,
 X,droughts,
+X,the climate,
+X,biogeochemical cycles,
 X,water temperature,"<a href=""https://data.neonscience.org/data-products/DP1.20053.001"" target=""_blank"">DP1.20053.001</a> (water surface); <a href=""https://data.neonscience.org/data-products/DP1.20264.001"" target=""_blank"">DP1.20264.001</a> (below water surface); <a href=""https://www.neonscience.org/data-collection/surface-water"" target=""_blank"">Read More: Surface Water</a>"
 X,surface water level,"<a href=""https://data.neonscience.org/data-products/DP1.20016.001"" target=""_blank"">DP1.20016.001</a>; <a href=""https://data.neonscience.org/data-products/DP1.20267.001"" target=""_blank"">DP1.20267.001</a>; <a href=""https://www.neonscience.org/data-collection/surface-water"" target=""_blank"">Read More: Surface Water</a>"
 X,IR biological temperature,"<a href=""https://data.neonscience.org/data-products/DP1.00005.001"" target=""_blank"">DP1.00005.001</a>; <a href=""https://www.neonscience.org/data-collection/meteorology"" target=""_blank"">Read More: Meteorology</a>"
