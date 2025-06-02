@@ -79,7 +79,20 @@ ui <- fluidPage(
     sidebarPanel(
       actionButton("generate", "Generate Question", class = "action-button"),
       br(), br(),
-      p("Press the button to generate a random research question!", style = "text-align: center;")
+      p("Press the button to generate a random research question!", style = "text-align: center;"),
+      selectizeInput(
+        "x_fixed", "Fix X variable:",
+        choices = c("Random" = "", variables$Variable[variables$Type == "X"]),
+        options = list(placeholder = 'Select, type, or leave as Random', create = TRUE),
+        selected = ""
+      ),
+      
+      selectizeInput(
+        "y_fixed", "Fix Y variable:",
+        choices = c("Random" = "", variables$Variable[variables$Type == "Y"]),
+        options = list(placeholder = 'Select, type, or leave as Random', create = TRUE),
+        selected = ""
+      )
     ),
     
     mainPanel(
@@ -130,8 +143,19 @@ server <- function(input, output, session) {
   selected_vars <- reactiveVal(list(x = NULL, y = NULL, comments = NULL))
   
   observeEvent(input$generate, {
-    x_var_raw <- sample(variables$Variable[variables$Type == "X"], 1)
-    y_var_raw <- sample(variables$Variable[variables$Type == "Y"], 1)
+    # Choose X
+    if (input$x_fixed != "") {
+      x_var_raw <- input$x_fixed
+    } else {
+      x_var_raw <- sample(variables$Variable[variables$Type == "X"], 1)
+    }
+    
+    # Choose Y
+    if (input$y_fixed != "") {
+      y_var_raw <- input$y_fixed
+    } else {
+      y_var_raw <- sample(variables$Variable[variables$Type == "Y"], 1)
+    }
     x_var <- x_var_raw
     x_var_nested <- NA
     while (grepl("\\[.*?\\]", x_var)) {

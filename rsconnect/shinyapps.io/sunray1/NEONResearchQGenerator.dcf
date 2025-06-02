@@ -5,7 +5,7 @@ account: sunray1
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 13266830
-bundleId: 9335031
+bundleId: 10384743
 url: https://sunray1.shinyapps.io/NEONResearchQGenerator/
 version: 1
 asMultiple: FALSE
